@@ -1,19 +1,25 @@
 <!DOCTYPE HTML>
  <html>
  	<head>
- 		<link rel="stylesheet" type="text/css" href="homepage-style.css">
+ 		<link rel="stylesheet" type="text/css" href="searchtry-style.css">
+ 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
  		<title>My Homepage</title>	
  	</head>
  	<body>
  		<header >
- 			<h2> My Homepage </h2>
+ 			<h1 style="font-size: 30px;"> My Homepage </h1>
  		</header>
- 		<form  method="get" action="https://duckduckgo.com/">
- 			<div class="sbar"> 
-				<input id = "input" type="text" name="q" size="50" value="" placeholder="Buscar en DuckDuckGo">
-			</div>
-		</form>
-		<div>
+ 		<div class= "form-container">
+ 			<form action="https://duckduckgo.com/" method="get" accept-charset="utf-8" autocomplete="off">
+	 			<div class= "search-box">
+		 			<input class= "search-txt"  type="text" id="input" name= "q" placeholder="Type to Search" value= "">
+		 			<div class="search-btn">
+						<img src="./search-icon.png" class = "search-icon">
+					</div>
+	 			</div>
+ 			</form>
+ 		</div>
+		<div class = "tabs-container">
 			<div class="grupo"> <!-- Div de Uni -->
 				<h2 class="tab-head">University</h2>
 				<div class = "all-tabs">
@@ -28,7 +34,6 @@
 							</div>
 						</a>
 					</div>
-
 					<div class ="tab" > 
 						<a href="http://dat.etsit.upm.es/examenes/p2010/3/">
 							<div class="tab-icon">
@@ -40,7 +45,6 @@
 							</div>
 						</a>
 					</div>
-
 					<div class ="tab" > 
 						<a href="https://www.upm.es/politecnica_virtual/principal.upm?UPMSSID=53qcikj9q8ghe85685unph9jj4" >
 							<div class="tab-icon" style="top: 6px;">
@@ -52,19 +56,6 @@
 							</div>
 						</a>
 					</div>
-
-					<!-- <div class ="tab" > 
-						<a href="http://openedx.labdoc.ssr.upm.es/courses/course-v1:etsit+95000028-2017-g33+1s2017/info" >
-							<div class="tab-icon">
-								<img src="icons/openedx.png" class="icon">
-							</div>
-							<div class="tab-title">OpenEdX</div>
-							<div class="tab-image">
-								<img src="images/openedx.png" class="image">
-							</div>
-						</a>
-					</div> -->
-
 					<div class ="tab" > 
 						<a href="https://moodle.lab.dit.upm.es/login/index.php">
 							<div class="tab-icon">
@@ -76,7 +67,6 @@
 							</div>
 						</a>
 					</div>
-
 					<div class ="tab" > 
 						<a href="https://matlab.mathworks.com/" >
 							<div class="tab-icon">
@@ -91,7 +81,6 @@
 
 				</div>
 			</div>
-
 			<div class="grupo">  <!-- Div de Most used -->
 				<h2 class="tab-head">Most used</h2>
 				<div class = "all-tabs">
@@ -106,20 +95,6 @@
 							</div>
 						</a>
 					</div>
-
-
-					<div class ="tab" > 
-						<a href="https://open.spotify.com/browse/featured">
-							<div class="tab-icon">
-								<img src="icons/spotify.png" class="icon">
-							</div>
-							<div class="tab-title">Spotify</div>
-							<div class="tab-image">
-								<img src="images/spotify.jpeg" class="image">
-							</div>
-						</a>
-					</div>
-
 					<div class ="tab" > 
 						<a href="https://web.whatsapp.com/" >
 							<div class="tab-icon">
@@ -131,20 +106,40 @@
 							</div>
 						</a>
 					</div>
-
 					<div class ="tab" > 
-						<a href="https://mail.google.com/mail/u/0/#inbox" >
+						<a href="https://www.instagram.com/" >
 							<div class="tab-icon">
-								<img src="icons/gmail.png" class="iconx">
+								<img src="icons/instagram.png" class="icon">
 							</div>
-							<div class="tab-title">Gmail</div>
+							<div class="tab-title">Instagram</div>
 							<div class="tab-image">
-								<img src="images/gmail.jpeg" class="image">
+								<img src="images/instagram.png" class="image">
 							</div>
 						</a>
 					</div>
-
 					<div class ="tab" > 
+						<a href="https://www.facebook.com/" >
+							<div class="tab-icon">
+								<img src="icons/facebook.png" class="icon">
+							</div>
+							<div class="tab-title">Facebook</div>
+							<div class="tab-image">
+								<img src="images/facebook.png" class="image">
+							</div>
+						</a>
+					</div>
+					<div class ="tab" > 
+						<a href="https://www.telegram.com/" >
+							<div class="tab-icon">
+								<img src="icons/telegram.png" class="icon">
+							</div>
+							<div class="tab-title">Telegram</div>
+							<div class="tab-image">
+								<img src="images/telegram.png" class="image">
+							</div>
+						</a>
+					</div>
+					<!-- <div class ="tab" > 
 						<a href="https://www.evernote.com/Home.action?login=true#n=1e8d5baa-421a-44a7-917a-8cf6abbf6ca6&s=s661&ses=4&sh=2&sds=5&">
 							<div class="tab-icon">
 								<img src="icons/evernote.png" class="icon">
@@ -154,11 +149,9 @@
 								<img src="images/evernote.jpeg" class="image">
 							</div>
 						</a>
-					</div>
-
+					</div> -->
 				</div>
 			</div>
-
 			<div class="grupo">  <!-- Div de Pirate -->
 				<h2 class="tab-head">Pirate</h2>
 				<div class = "all-tabs">
@@ -173,7 +166,6 @@
 							</div>
 						</a>
 					</div>
-
 					<div class ="tab" > 
 						<a href="http://espamobi.com/" >
 							<div class="tab-icon">
@@ -185,7 +177,6 @@
 							</div>
 						</a>
 					</div>
-
 					<div class ="tab" > 
 						<a href="http://www.megaepub.com/" >
 							<div class="tab-icon" style="top: 6px;">
@@ -197,10 +188,8 @@
 							</div>
 						</a>
 					</div>
-
 				</div>
 			</div>
-
 			<div class="grupo" style="margin-bottom: 5px;">  <!-- Div de Shopping -->
 				<h2 class="tab-head">Shopping</h2>
 				<div class = "all-tabs">
@@ -215,8 +204,6 @@
 							</div>
 						</a>
 					</div>
-
-
 					<div class ="tab" > 
 						<a href="https://es.aliexpress.com/">
 							<div class="tab-icon">
@@ -228,7 +215,6 @@
 							</div>
 						</a>
 					</div>
-
 					<div class ="tab" > 
 						<a href="https://www.ebay.es/" >
 							<div class="tab-icon">
@@ -240,7 +226,6 @@
 							</div>
 						</a>
 					</div>
-
 				</div>
 			</div>
 		</div>
