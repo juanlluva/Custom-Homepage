@@ -5,7 +5,7 @@
 
 body{
 
-	font: small arial,sans-serif;
+	font-family: 'Roboto', sans-serif;
     margin-bottom: 15px;
     text-align: -webkit-center;
     background-image: url(test.jpeg);
@@ -17,8 +17,9 @@ body{
 
 header{
 	padding: 20px;
-	font-family: arial;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
+	color: #2f3640;
 }
 
 .form-container{
@@ -31,6 +32,7 @@ header{
 .search-box{
 	position: relative;
 	background: #2f3640;
+	opacity: 0.95;
 	height: 30px;
 	border-radius: 30px;
 	padding: 7px;
@@ -43,12 +45,13 @@ header{
 
 .search-box:hover > .search-btn {
 	background: #00a8ff;
+	opacity: 0.9;
 }
 
 .search-btn{
 	color: #00a8ff;
 	float: right;
-	width: 30px;
+	width: 30px;opacity: 0.95;
 	height: 30px;
 	border-radius: 50%;
 	background: #2f3640;
@@ -95,6 +98,7 @@ header{
 .tab-head{
 	padding: 10px;
 	margin-bottom: 8px;
+	color: #2f3640;
 }
 
 .all-tabs {
@@ -104,7 +108,7 @@ header{
 
 .tab{
 	position:relative;
-	border-radius: 3px;
+	border-radius: 11.7%;
 	min-height:  112px;
 	min-width: 140px;
 
@@ -112,6 +116,7 @@ header{
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 	margin-left: 50px;
 	margin-right: 50px;
+	padding-bottom: 1px;
 }
 
 .tab:hover{
@@ -158,13 +163,14 @@ header{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	width: 106px;
-	color: black;
+	color: #2f3640;
 }
 
 .image{
 	left: 1px;
 	width: 134px;
 	height: 86px;
+	border-radius: 10px;
 }
 
 .tab-image{
